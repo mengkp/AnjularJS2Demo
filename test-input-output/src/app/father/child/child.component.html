@@ -1,0 +1,8 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">父标签</div>
+  <div class="panel body">
+    <div *ngFor="let value of values;let i=index" >
+      <button class="btn btn-success" (click)="outPutIndex(i)">删除{{value}}</button>
+    </div>
+  </div>
+</div>
