@@ -1,0 +1,56 @@
+<div>
+  <div class="bak_png"></div>
+  <div class="form_area from_opcity"></div>
+  <div class="form_area real_form">
+    <h3 class="text_center ft30 mt20 mb40">忘 记 密 码</h3>
+    <form class="form-horizontal" role="form">
+      <!-- 用户名 -->
+      <div class="form-group">
+        <label class="control-label col-sm-2" >邮箱</label>
+        <div class="col-sm-8 input-prepend">
+          <input type="text" class="form-control" placeholder="请输入注册时使用的邮箱">
+          <div class="text-danger">请输入邮箱</div>
+        </div>
+      </div>
+
+      <!-- 验证码 -->
+      <div class="form-group">
+        <label class="control-label col-sm-2" >验证码</label>
+        <div class="col-sm-8 input-prepend">
+          <input type="text" class="form-control" placeholder="请输入验证码">
+          <div class="text-danger">请输入验证码</div>
+        </div>
+      </div>
+
+
+
+      <!-- 密码 -->
+      <div class="form-group">
+        <label class="control-label col-sm-2" >密码</label>
+        <div class="col-sm-8 input-prepend">
+          <input type="password" class="form-control" placeholder="请输入密码">
+          <div class="text-danger">密码长度在6-12位数字和字母的组合</div>
+        </div>
+      </div>
+
+      <!-- 确认密码 -->
+      <div class="form-group">
+        <label class="control-label col-sm-2" >确认密码</label>
+        <div class="col-sm-8 input-prepend">
+          <input type="password" class="form-control" placeholder="请输入确认密码">
+          <div class="text-danger">两次输入的密码不一致</div>
+        </div>
+      </div>
+
+      <!-- 登陆 -->
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button  class="btn btn-info" (click)="login()">确 认</button>
+          <button  class="btn btn-danger ml30px" routerLink="/login">取 消</button>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+</div>

@@ -1,4 +1,3 @@
-<!--bootstrap 的容器 很多样式都需要依赖这个container-->
 <div>
   <div class="bak_png"></div>
   <div class="form_area from_opcity"></div>
@@ -7,9 +6,9 @@
     <form class="form-horizontal" role="form">
       <!-- 用户名 -->
       <div class="form-group">
-        <label class="control-label col-sm-2" for="userName" >用户名</label>
+        <label class="control-label col-sm-2" >用户名</label>
         <div class="col-sm-8 input-prepend">
-          <input type="text" class="form-control" id="userName" placeholder="请输入用户名">
+          <input type="text" class="form-control" placeholder="请输入注册时使用的邮箱">
           <div class="text-danger">请输入用户名</div>
         </div>
       </div>
@@ -18,23 +17,13 @@
       <div class="form-group">
         <label class="control-label col-sm-2" >密码</label>
         <div class="col-sm-8 input-prepend">
-          <input type="text" class="form-control" placeholder="请输入密码">
+          <input type="password" class="form-control" placeholder="请输入密码">
           <div class="text-danger">请输入密码</div>
         </div>
       </div>
-
-      <!-- 忘记密码 -->
-      <!--<div class="form-group">
-        <label class="control-label col-sm-2" >确认密码</label>
-        <div class="col-sm-8 input-prepend">
-          <input type="text" class="form-control" placeholder="请输入确认密码">
-          <div class="text-danger">两次输入的密码不一致</div>
-        </div>
-      </div>-->
-
       <!-- 忘记密码 -->
       <div class="login_forget">
-        <a href="#">忘记密码？</a>
+        <a routerLink="/forgetPsw">忘记密码？</a>
       </div>
 
       <!-- 登陆 -->
@@ -46,9 +35,10 @@
 
       <!-- 注册 -->
       <div class="login_to_reg">
-        <span>没有账号?</span> <a href="#">立即注册</a>
+        <span>没有账号?</span> <a routerLink="/userRegister">立即注册</a>
       </div>
 
     </form>
+
   </div>
 </div>
